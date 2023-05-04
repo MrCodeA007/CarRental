@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Car Rental Site</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Acme Car Rental</legend>
+        <p>PickUp date:</p>
+        <input id="pickUp" type="date">
+        <p>Number of Days:</p>
+        <input id="numbersOfDays" type="number">
+        <p>Options:</p>
+        <input type="checkbox" id="tollTag" name="tollTag" checked>
+        <label for="tollTag">Electronic Toll Tag ($3.95/day)</label><br>
+        <input type="checkbox" id="GPS" name="GPS" checked>
+        <label for="GPS" id="GPS">GPS ($2.95/day)</label><br>
+        <input type="checkbox" id="roadAssist" name="roadAssist" checked>
+        <label for="roadAssist">Roadside Assistance($2.95/day)</label><br>
+        <br>
+        <p>Under 25</p>
+        <input type="radio" id="25No" name="25No">
+        <label for="25No" id="25No">No</label>
+        <input type="radio" id="25Yes" name="25Yes">
+        <label for="25Yes" id="25Yes">Yes</label> <br><br>
+       <input id="totalCost" type="button" value="Estimate Total Cost" /> <br><br>
+       <table>
+        <tr>
+        <th>Car Rental:</th><td id="carRental"> </td>
+        </tr>
+        <tr>
+        <th>Options:</th><td id="options"></td>
+        </tr>
+        <tr>
+        <th>Under 25 surCharge:</th><td id="25surCharge"></td>
+        </tr>
+        <tr> 
+            <th>Total Due:</th><td id="totalDue"></td>
+        </tr>
+       </table>
+       <!-- <label for="carRental" id="carRental">Car rental:</label>
+        <input id="carRental" type="text" name="carRental" value=""><br><br>
+        <label for="options" id="options">Options:</label>
+        <input id="options" type="text" name="options" value=""><br><br>
+        <label for="25surCharge" id="25surCharge">Under 25 surCharge:</label>
+        <input id="25surCharge" type="text" name="25surCharge" value=""><br><br>
+        <label for="totalDue" id="totalDue">Total Due:</label>
+        <input id="totalDue" type="text" name="totalDue" value=""> -->
+
+
+    </fieldset>
+    <!--<input id="totalCost" type="button" value="Estimate Total Cost" />-->
+    <script src="index.js"></script>
+</body>
+
+</html>
