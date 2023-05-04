@@ -1,9 +1,14 @@
 "use strict"
 //--------------------------------------------------------------------------
 function onBtnClickedfunction () {
-  
+  const numberOfDaysEl = document.getElementById(`numbersOfDays`);
+  const answer = basicCarRental * numberOfDaysEl.value;
+  carRentalEl.innerHTML = answer;
+  //console.log(`click`)
 }
-
+const basicCarRental = 29.99;
+const  carRentalEl = document.getElementById(`carRental`);
+//const carRentalPEl = document.getElementById(`carRentalP`)
 const totalCostEl = document.getElementById(`totalCost`);
 totalCostEl.onclick = onBtnClickedfunction
 //---------------------------------------------------------------------------
